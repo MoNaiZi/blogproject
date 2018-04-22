@@ -21,4 +21,3 @@ def deploy():
         """.format(source_folder))
     sudo('restart gunicorn-zhongminyong.tech')
     sudo('service nginx reload')
-    
