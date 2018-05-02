@@ -1,12 +1,15 @@
-from fabric.api import env , run
+from fabric.api import env, run
 from fabric.operations import sudo
 
-GIT_REPO = 'https://github.com/MoNaiZi/gitskills'
+GIT_REPO = "https://github.com/MoNaiZi/gitskills.git"
 
 env.user = 'root'
 env.password = 'vnLiJPI7i5o8'
 
-env.hosts = ['zhongminyong.tech']
+
+env.hosts = 'zhongminyong.tech'
+
+
 env.port = '28950'
 
 def deploy():

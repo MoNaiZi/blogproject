@@ -75,7 +75,7 @@
                                                                       datetime="{{ post.created_time }}">{{ post.created_time }}</time></a></span>
                             <span class="post-author"><a href="#">追梦人物</a></span>
                             <span class="comments-link"><a href="#">4 评论</a></span>
-                            <span class="views-count"><a href="#">588 阅读</a></span>
+                            <span class="views-count"><a href="#">{{ post.views }} 阅读</a></span>
                         </div>
                     </header>
                     <div class="entry-content clearfix">
@@ -136,6 +136,7 @@
                 {% block toc %}
                 <div class="widget widget-content">
                     <h3 class="widget-title">文章目录</h3>
+                    {{ post.toc|safe }}
                     <ul>
                         <li>
                             <a href="#">教程特点</a>
